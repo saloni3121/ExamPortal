@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bg{
+    background:#247ba0;
+}
+.navbar-nav .nav-link{
+    color:#fff!important;
+    font-size: 16px;
+}
+.navbar-toggler{
+    outline:none!important;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 7px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -25px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    /* margin-right: 80px; */
+  }
+  .card{
+      width: 16rem;
+  }
+}
+</style>
+</head>
+<body>
+
+    <!-- Navbar begins -->
+  <nav class="navbar navbar-expand-lg navbar-light nav-bg fixed-top py-2" id="mainNav">
+    <div class='container'>
+      <a class="navbar-brand text-white" style="font-size: 20px;"  href="#">Exam Portal</a>
+      <button class='navbar-toggler navbar-toggler-right' type="button" data-toggle='collapse' data-target='#myNavbar'
+        aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="User.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="RegisteredUser.html">Registered</a></li>
+          <li class="nav-item"><a class="nav-link" href="OrgUser.html">Organizations</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">Projects</a></li> -->
+          <!-- <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li> -->
+          
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+<div class="wrapper" style="margin-top: 90px;">
+<h2 style="text-align: center;">Organizations joined</h2>
+<div class="row" style="margin-right: -570px;margin-top: 30px;"  >
+    <div class="column">
+        <div class="card" style="width: 24rem;margin-right: 20px;">
+            <img class="card-img-top" src="IMG_6355.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <input type="text" class="form-control" name="text" placeholder="Enter the code" required="required">
+            </div>
+          </div>
+    </div>
+    <div class="column">
+        <div class="card" style="width: 24rem;margin-right: 20px;">
+            <img class="card-img-top" src="IMG_6355.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+    </div>
+    <div class="column">
+        <div class="card" style="width: 24rem;margin-right: 20px;">
+            <img class="card-img-top" src="IMG_6355.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+    </div>
+    
+  </div>
+  
+    
+</div>
+
+</body>
+</html>
