@@ -34,6 +34,7 @@
 	 font-weight: 300;
 }
  .wrapper {
+	 /* background-image: url("back.jpg") ; */
 	 background: #232f34;
 	 background: -webkit-linear-gradient(top left,#232f34 0%,#4a6572 100%);
 	 background: -moz-linear-gradient(top left,#232f34 0%,#4a6572 100%);
@@ -204,4 +205,3 @@
 		 transform: translateY(-700px) rotate(600deg);
 	}
 }
- 
